@@ -1,0 +1,5 @@
+- name: Demo Role
+  debug:   
+    msg: "Hi, I'am from Demo Role task"
+
+    # When i run common.yaml this demo file will get executed

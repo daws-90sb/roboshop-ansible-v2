@@ -1,0 +1,6 @@
+- name: demo on common role
+  hosts: catalogue
+  roles: 
+  - demo 
+  # now catalogue host ni target chesthu demo ane role execute avtundi
+  # When i run common.yaml this demo file will get executed
