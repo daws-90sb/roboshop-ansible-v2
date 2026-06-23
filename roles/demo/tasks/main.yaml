@@ -5,5 +5,7 @@
 - name: import common role
   import_role:
    name: common
+   # if u want to load any specific file then follow tasks_from
+   tasks_from: Hello.yaml
 
     # When i run common.yaml this demo file will get executed
