@@ -1,5 +1,9 @@
 - name: Demo Role
   debug:   
     msg: "Hi, I'am from Demo Role task"
+    # This should load another role called common, or it will call common directories main file
+- name: import common role
+  import_role:
+   name: common
 
     # When i run common.yaml this demo file will get executed
