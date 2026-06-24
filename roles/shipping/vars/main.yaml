@@ -1,3 +1,3 @@
-"{{ mysql_login_user}}": root
-"{{ mysql_root_password }}": RoboShop@1
-login_host: "{{ MYSQL_HOST }}" # the username and password will conenct to this host nad then it will load below script files
+ mysql_login_user: root
+ mysql_root_password: RoboShop@1
+ login_host: "{{ MYSQL_HOST }}" # the username and password will conenct to this host nad then it will load below script files
