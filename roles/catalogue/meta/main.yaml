@@ -1,0 +1,6 @@
+dependencies:
+  - role: common
+  # This will execute the dependencies  first from common >> tasks >> main.yaml
+  # If we want to execute anything imp then add that to this so that this meta will get executed before catalogue executes 
+  # catalogue depends on common role, so common role main.yaml will be executed first
+  
