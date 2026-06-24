@@ -1,0 +1,8 @@
+- name: "copy {{ component }} service"
+  template:
+      src: "{{ component }}.service.j2" # this is the template which will run in runtime asible will search for service file in run time...ansible executes the variable assigned in service template in run time 
+      dest: "/etc/systemd/system/{{ component }}.service"
+- name: deamon reload
+  systemd_service:
+    name: "{{ component }}"
+    daemon_reload: true
