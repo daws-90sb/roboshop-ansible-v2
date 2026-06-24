@@ -29,7 +29,7 @@
   community.mysql.mysql_db:
     state: import
     name: all
-    login_user: "{{ mysql_login_user}}"
+    login_user: "{{ mysql_login_user }}"
     login_password: "{{ mysql_root_password }}"
     login_host: "{{ MYSQL_HOST }}" # the username and password will conenct to this host nad then it will load below script files
     target: "{{ item }}"
